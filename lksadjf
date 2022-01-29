@@ -1,0 +1,34 @@
+ id |  user_id   | mahsulot_turi | mahsulot_nomi | soni  | vaqti | holati 
+----+------------+---------------+---------------+-------+-------+--------
+ 21 | 2024798044 | pitsa         | kombo         |     0 |       | 
+ 22 | 2024798044 | pitsa         | qazili        |     0 |       | 
+ 23 | 2024798044 | pitsa         | margarita     |     0 |       | 
+ 24 | 2024798044 | pitsa         | margarita     |     0 |       | 
+ 25 | 2024798044 | pitsa         | pepperoni     |     0 |       | 
+ 26 | 5011533211 | pitsa         | kombo         |     0 |       | 
+ 27 | 2024798044 | pitsa         | qo'ziqorinli  |     0 |       | 
+ 29 | 5011533211 | pitsa         | kombo         |     0 |       | 
+  3 | 2023671991 | pitsa         | margarita     | 20236 |       | 
+  4 | 2023671991 | pitsa         | qo'ziqorinli  | 20236 |       | 
+  5 | 2023671991 | pitsa         | pepperoni     | 20236 |       | 
+  6 | 2023671991 | pitsa         | kombo         | 20236 |       | 
+  7 | 2023671991 | pitsa         | qo'ziqorinli  | 20236 |       | 
+  8 | 2023671991 | pitsa         | kombo         | 20236 |       | 
+  9 | 2023671991 | pitsa         | pepperoni     | 20236 |       | 
+ 10 | 2023671991 | pitsa         | margarita     | 20236 |       | 
+ 11 | 2023671991 | pitsa         | kombo         | 20236 |       | 
+ 12 | 2023671991 | pitsa         | kombo         | 20236 |       | 
+ 13 | 2023671991 | pitsa         | kombo         | 20236 |       | 
+ 14 | 2023671991 | pitsa         | qo'ziqorinli  | 20236 |       | 
+ 15 | 2023671991 | pitsa         | margarita     | 20236 |       | 
+ 16 | 2023671991 | pitsa         | pepperoni     | 20236 |       | 
+ 17 | 2023671991 | pitsa         | kombo         | 20236 |       | 
+ 28 | 2023671991 | pitsa         | qo'ziqorinli  | 20236 |       | 
+ 30 | 2023671991 | pitsa         | ananasli      | 20236 |       | 
+ 31 | 2023671991 | pitsa         | qo'ziqorinli  | 20236 |       | 
+ 32 | 2023671991 | pitsa         | qo'ziqorinli  | 20236 |       | 
+ 33 | 2023671991 | pitsa         | ananasli      | 20236 |       | 
+ 34 | 2023671991 | pitsa         | qazili        | 20236 |       | 
+ 35 | 2023671991 | pitsa         | qo'ziqorinli  | 20236 |       | 
+(30 rows)
+
