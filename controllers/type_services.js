@@ -24,19 +24,19 @@ module.exports = class controller {
             }
             switch (message.data) {
               case '/pizza':
-                await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/pizza.jpg')
+                await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','pizza.jpg'))
                 await bot.sendMessage(message.from.id,"🍕Pitsa bo'limi",buttons.button2)
                 break;
               case '/ichimliklar':
-                  await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/ichimliklar.jpg')
+                  await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','ichimliklar.jpg'))
                   await bot.sendMessage(message.from.id,"🥤Ichimliklar bo'limi",buttons.button3)
                   break;
               case '/desert':
-                  await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/desert.jpg')
+                  await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','desert.jpg'))
                   await bot.sendMessage(message.from.id,"🧁Desert bo'limi",buttons.button4)
                   break;
               case '/salatlar':
-                  await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/salat.jpg')
+                  await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','salat.jpg'))
                   await bot.sendMessage(message.from.id,"🥗Salatlar bo'limi",buttons.button5)
                   break;
             }
@@ -64,7 +64,7 @@ module.exports = class controller {
 
                await bot.deleteMessage(message.from.id,message.message.message_id-1)
                await bot.deleteMessage(message.from.id,message.message.message_id)
-               await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/kombo.jpg')
+               await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','pizza.jpg'))
                await bot.sendMessage(message.from.id,`Siz tanlagan pitsa turi :${buyurtma.mahsulot_nomi}\tSoni:${0}`)
                await bot.sendMessage(message.from.id,`Nechta buyurtirmoqchi ekaningizni tanlang: `,buttons.button6)
 
@@ -162,23 +162,23 @@ module.exports = class controller {
 
             switch(message.data){
               case 'Cola':
-                await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/cola.jpg')
+                await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','cola.jpg'))
                 await bot.sendMessage(message.from.id,`Bo'lim ${message.data} `,buttons.button7)
                 break;
               case 'Pepsi':
-                await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/cola.jpg')
+                await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','cola.jpg'))
                 await bot.sendMessage(message.from.id,`Bo'lim ${message.data} `,buttons.button7)
                 break;
               case 'Suv':
-                  await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/suv.jpg')
+                  await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','suv.jpg'))
                   await bot.sendMessage(message.from.id,`💧Bo'lim ${message.data} `,buttons.button8)
                   break;
               case 'Sok':
-                  await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/sok.jpg')
+                  await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','sok.jpg'))
                   await bot.sendMessage(message.from.id,`Bo'lim ${message.data} `,buttons.button9)
                   break;
               case 'Kofe':
-                  await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/kofe.jpg')
+                  await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','kofe.jpg'))
                   await bot.sendMessage(message.from.id,`Bo'lim ${message.data} `,buttons.button10)
                   break;
               case 'Choy':
@@ -334,7 +334,7 @@ module.exports = class controller {
 
               await bot.deleteMessage(message.from.id,message.message.message_id-1)
               await bot.deleteMessage(message.from.id,message.message.message_id)
-              await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/sok.jpg')
+              await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','sok.jpg'))
               await bot.sendMessage(message.from.id,`Siz tanlagan sok turi :${buyurtma.mahsulot_nomi}\tSoni:${0}`)
               await bot.sendMessage(message.from.id,`Nechta buyurtirmoqchi ekaningizni tanlang: `,buttons.button14)
 
@@ -365,7 +365,7 @@ module.exports = class controller {
 
                await bot.deleteMessage(message.from.id,message.message.message_id-1)
                await bot.deleteMessage(message.from.id,message.message.message_id)
-               await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/ichimliklar.jpg')
+               await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','ichimliklar.jpg'))
                await bot.sendMessage(message.from.id,"🧃Soklar bo'limi",buttons.button9)
 
           }
@@ -381,7 +381,7 @@ module.exports = class controller {
               await bot.deleteMessage(message.from.id,message.message.message_id-2)
               await bot.deleteMessage(message.from.id,message.message.message_id-1)
               await bot.deleteMessage(message.from.id,message.message.message_id)
-                 await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/pizza.jpg')
+                 await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','ichimliklar.jpg'))
                  await bot.sendMessage(message.from.id,"🍕Pitsa bo'limi",buttons.button2)
                  break;
               case 'ichimlik_turidan_orqaga':
@@ -389,19 +389,19 @@ module.exports = class controller {
 
               await bot.deleteMessage(message.from.id,message.message.message_id-1)
               await bot.deleteMessage(message.from.id,message.message.message_id)
-                 await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/ichimliklar.jpg')
+                 await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','ichimliklar.jpg'))
                  await bot.sendMessage(message.from.id,"🥤Ichimliklar bo'limi",buttons.button3)
                 break;
               case 'desert_turidan_orqaga':
               await bot.deleteMessage(message.from.id,message.message.message_id-1)
               await bot.deleteMessage(message.from.id,message.message.message_id)
-                await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/desert.jpg')
+                await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','desert.jpg'))
                 await bot.sendMessage(message.from.id,"🧁Desert bo'limi",buttons.button4)
                 break;
               case 'salat_turidan_orqaga':
               await bot.deleteMessage(message.from.id,message.message.message_id-1)
               await bot.deleteMessage(message.from.id,message.message.message_id)
-                await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/salat.jpg')
+                await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','salat.jpg'))
                 await bot.sendMessage(message.from.id,"🥗Salatlar bo'limi",buttons.button5)
                 break;
             }
@@ -423,7 +423,7 @@ module.exports = class controller {
             }
             await bot.deleteMessage(message.from.id,message.message.message_id-1)
             await bot.deleteMessage(message.from.id,message.message.message_id)
-            await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/sok.jpg')
+            await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','desert.jpg'))
             await bot.sendMessage(message.from.id,`Siz tanlagan pishiriq turi :${buyurtma.mahsulot_nomi}\tSoni:${0}`)
             await bot.sendMessage(message.from.id,`Nechta buyurtirmoqchi ekaningizni tanlang: `,buttons.button18)
 
@@ -445,7 +445,7 @@ module.exports = class controller {
 
             await bot.deleteMessage(message.from.id,message.message.message_id-1)
             await bot.deleteMessage(message.from.id,message.message.message_id)
-            await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/desert.jpg')
+            await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','desert.jpg'))
             await bot.sendMessage(message.from.id,"🧁Desert bo'limi",buttons.button4)
           }
           if(message.data=='desert_-'){
@@ -473,7 +473,7 @@ module.exports = class controller {
             }
             await bot.deleteMessage(message.from.id,message.message.message_id-1)
             await bot.deleteMessage(message.from.id,message.message.message_id)
-            await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/salat.jpg')
+            await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','salat.jpg'))
             await bot.sendMessage(message.from.id,`Siz tanlagan salat turi :${buyurtma.mahsulot_nomi}\tSoni:${0}`)
             await bot.sendMessage(message.from.id,`Nechta buyurtirmoqchi ekaningizni tanlang: `,buttons.button19)
 
@@ -502,7 +502,7 @@ module.exports = class controller {
 
             await bot.deleteMessage(message.from.id,message.message.message_id-1)
             await bot.deleteMessage(message.from.id,message.message.message_id)
-            await bot.sendPhoto(message.from.id,'/home/kamron/Pictures/salat.jpg')
+            await bot.sendPhoto(message.from.id,path.join(process.cwd(),'pictures','salat.jpg'))
             await bot.sendMessage(message.from.id,"🥗Salat bo'limi",buttons.button5)
           }
           if(message.data == 'buyurtma amalga oshirish'){
@@ -526,12 +526,26 @@ module.exports = class controller {
             })
           }
           if(message.data=='buyurtmani_bekorqilish'){
-            await bot.deleteMessage(message.from.id,message.message.message_id)
+
+             bot.deleteMessage(message.from.id,message.message.message_id)
+            // await bot.deleteMessage(message.from.id,message.message.message_id-1)
+            // await bot.deleteMessage(message.from.id,message.message.message_id-2)
+
             await  bot.sendMessage(message.from.id,`${message.from.first_name}, keling birga buyurtma qilamiz `,buttons.button1)
 
             await pg(true,'delete from korzinka where user_id=$1',message.from.id),
             await pg(true,'delete from zakaz where user_id=$1',message.from.id)
 
+          }
+          if(message.data=='buyurtmani bekor qilish'){
+            bot.deleteMessage(message.from.id,message.message.message_id)
+           await bot.deleteMessage(message.from.id,message.message.message_id-1)
+           // await bot.deleteMessage(message.from.id,message.message.message_id-2)
+
+           await  bot.sendMessage(message.from.id,`${message.from.first_name}, keling birga buyurtma qilamiz `,buttons.button1)
+
+           await pg(true,'delete from korzinka where user_id=$1',message.from.id),
+           await pg(true,'delete from zakaz where user_id=$1',message.from.id)
           }
           if(message.location){
 
@@ -548,7 +562,7 @@ module.exports = class controller {
             let raqam = zakaz[0].user_phone_number
             let korzinka = await pg(false,`select * from korzinka where user_id=$1`,message.from.id)
             let soni = 0
-            console.log(zakaz);
+
             let longitude = zakaz[0].user_longtitude
             let latitude = zakaz[0].user_latitude
             let vaqt = new Date()
