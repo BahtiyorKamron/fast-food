@@ -1,5 +1,4 @@
 const TOKEN = require('./config/env').token
-console.log(TOKEN);
 const pg = require('./util/pg')
 const telegram_bot = require("node-telegram-bot-api")
 const bot = new telegram_bot(TOKEN,{
